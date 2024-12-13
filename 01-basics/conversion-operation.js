@@ -7,6 +7,10 @@
 // let numberStringElement = Number(stringElement)
 // console.log(typeof numberStringElement)
 
-let stringElement = "123"
-let numberStringElement = Boolean(stringElement)
-console.log(numberStringElement)
+// let stringElement = "123"
+// let numberStringElement = Boolean(stringElement)
+// console.log(numberStringElement)
+
+// let numberFind = 3;
+// const numberFind2 = ++numberFind;
+// console.log(numberFind2)
