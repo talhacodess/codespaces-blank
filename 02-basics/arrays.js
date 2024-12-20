@@ -7,8 +7,11 @@ const marvalHeros = ["Thor","Ironman","Spiderman"]
 const dcHeros = ["Batman","superman","flash"]
 // marvalHeros.push(dcHeros)
 // console.log(marvalHeros);
-const allHeros  = marvalHeros.concat(dcHeros);
-console.log(allHeros);
+// const allHeros  = marvalHeros.concat(dcHeros);
+// console.log(allHeros);
+// const all_new_heros = [...marvalHeros,...dcHeros]
+// console.log(all_new_heros);
+
 
 // const anotherArray = [1,2,3,[5,6,7],[9,9,0,5,[9,2,3]]]
 // const new_anotherArray = anotherArray.flat(Infinity)
