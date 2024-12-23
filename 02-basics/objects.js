@@ -59,7 +59,7 @@ const obj2 = {3:"a",4:"b"}
 // const obj3 = Object.assign({},obj1,obj2)
 const obj3 = {...obj1,...obj2}
 
-console.log(obj3);
+// console.log(obj3);
 let users = [ {
     name: "Usman",
     email: "usman@gimal.com"
@@ -82,10 +82,29 @@ let users = [ {
 }
 ]
 
-console.log(users[2].email);
-console.log(tindderUser);
+// console.log(users[2].email);
+// console.log(tindderUser);
 
-console.log(Object.keys(tindderUser))
-console.log(Object.values(tindderUser))
-console.log(Object.entries(tindderUser))
-console.log(tindderUser.hasOwnProperty("userLoggedIn"))
+// console.log(Object.keys(tindderUser))
+// console.log(Object.values(tindderUser))
+// console.log(Object.entries(tindderUser))
+/** hasOwnProperty is use to find key exist in object or not */
+// console.log(tindderUser.hasOwnProperty("talhaUser"))
+
+
+//Object De-Structure lecture 3
+
+let course = {
+    name: "talha",
+    CoursName: "JS With React",
+    CourseInstructor: "M Bashir "
+}
+
+
+
+// console.log(course.CourseInstructor);
+const  {CourseInstructor: Instructor} = course
+
+console.log(Instructor);
+
+
