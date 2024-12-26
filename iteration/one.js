@@ -19,9 +19,20 @@
     
     
 // }
-let myArray = ["Talha","Hassan","Usman"]
-console.log(myArray.length)
-for (let index = 0; index < myArray.length; index++) {
-    const element = myArray[index];
+// let myArray = ["Talha","Hassan","Usman"]
+// console.log(myArray.length)
+// for (let index = 0; index < myArray.length; index++) {
+//     const element = myArray[index];
+//     console.log(element)
+// }
+
+for (let index = 0; index < 15; index++) {
+    const element = index;
     console.log(element)
+    if (index == 5) {
+        console.log(`5 is my favourite value= ${index}`);
+        continue
+        
+    }
+    
 }
