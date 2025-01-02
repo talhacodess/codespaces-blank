@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul class = "language">
+        <li>Javascript</li>
+    </ul>
+   
+</body>
+<script>
+    function addElement(languageNew){
+    let li = document.createElement('li')
+    li.innerHTML = `${languageNew}`
+    appEle = document.querySelector('.language')
+    appEle.appendChild(li)
+
+    }
+    addElement('Python')
+    addElement('HTML')
+
+    function addOptElement (lang){
+        let li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addOptElement('Css')
+
+    //edit
+    let editElement = document.querySelector('li:nth-child(3)')
+    const li = document.createElement('li')
+    li.textContent = 'Mojo'
+    editElement.replaceWith(li)
+    
+    let firstelement = document.querySelector('li:first-child')
+    firstelement.outerHTML = '<li>My Phython</li>'
+
+// remove
+ let lastElement = document.querySelector('li:last-child')
+ lastElement.remove()   
+
+</script>
+</html>
