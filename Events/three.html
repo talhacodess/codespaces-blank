@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+   const sayDate = (str) => {
+       console.log(str, new Date().toLocaleString());
+   };
+
+   let dateInterval; // Variable to store the interval ID
+
+   const startBtn = document.getElementById('start');
+   const stopBtn = document.getElementById('stop');
+
+   stopBtn.addEventListener('click', () => {
+       clearInterval(dateInterval); // Stop the interval
+       dateInterval = null; // Reset the interval variable
+       console.log('Interval stopped');
+   });
+
+   startBtn.addEventListener('click', () => {
+       if (!dateInterval) { // Prevent multiple intervals
+           dateInterval = setInterval(sayDate, 1000, 'Hello');
+           console.log('Interval started');
+       } else {
+           console.log('Interval already running');
+       }
+   });
+</script>
+</html>
